@@ -1,0 +1,23 @@
+baseURL = 'https://dmellado.github.io/bpfman_package_web/'
+languageCode = 'en-us'
+title = 'bpfman Fedora Packaging Guide'
+theme = 'hugo-book'
+
+[params]
+  BookTheme = 'dark'
+  BookToC = true
+  BookSection = 'docs'
+  BookRepo = 'https://github.com/dmellado/bpfman_package_web'
+  BookEditPath = 'edit/main/content'
+  BookDateFormat = 'January 2, 2006'
+  BookSearch = true
+  BookComments = false
+
+[markup]
+  [markup.highlight]
+    style = 'monokai'
+    noClasses = true
+    lineNos = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,47 @@
+:root[data-theme="dark"],
+body.book[data-theme="dark"] {
+  pre,
+  code {
+    background: #272822;
+    color: #f8f8f2;
+  }
+
+  pre {
+    border-color: #3e3e3e;
+  }
+
+  .highlight pre {
+    background: #272822;
+  }
+}
+
+.book-copy-btn {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, background 0.15s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+
+  &.copied {
+    border-color: #66bb6a;
+    color: #66bb6a;
+    opacity: 1;
+  }
+}
+
+pre:hover .book-copy-btn {
+  opacity: 1;
+}
