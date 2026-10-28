@@ -30,9 +30,17 @@ The bpfman package lives in Fedora's
 with `fedpkg`:
 
 ```bash
-fedpkg clone bpfman
+fedpkg clone -a bpfman
 cd bpfman
 ```
+
+The `-a` (`--anonymous`) option clones the repository without
+authentication. You can download, modify, and build the package locally.
+Cloning without `-a` uses SSH authentication and requires a Fedora
+account in the `packager` group with an SSH key configured
+(see [Package Source Control](https://fedoraproject.org/wiki/Package_Source_Control)).
+To push changes, you must authenticate and have write permissions for
+the target repository.
 
 This clones the dist-git repo and checks out the default branch
 (`rawhide`). The `sources` file references tarballs stored in Fedora's
