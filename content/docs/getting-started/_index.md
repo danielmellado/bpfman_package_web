@@ -30,7 +30,7 @@ The bpfman package lives in Fedora's
 with `fedpkg`:
 
 ```bash
-fedpkg clone bpfman
+fedpkg clone -a bpfman
 cd bpfman
 ```
 
